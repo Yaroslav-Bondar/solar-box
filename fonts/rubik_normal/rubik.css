@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Rubik';
+	src: url('../fonts/rubik.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/rubik.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/rubik.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/rubik.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/rubik.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/rubik.svg#rubik') format('svg'); /* Chrome < 4, Legacy iOS */
+}

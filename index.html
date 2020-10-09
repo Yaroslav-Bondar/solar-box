@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script async src="js/jquery_3_5_1_c.js"></script>
+    <script async src="js/header-fixed.js"></script>
+    <!-- <script async src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <script  src="js/click.js"></script>
+    <title>Solar Box</title>
+</head>
+<body>
+    <!-- <script async>
+        $(document).ready(function(){
+        alert(jQuery.fn.jquery);
+        });
+    </script> -->
+    <section class="billboard">
+        <div class="wrapper">
+            <header class="billboard__header">
+                <div class="billboard__wrapper">
+                    <div class="billboard__logo-block">
+                        <a href="#" class="billboard__logo-img"><img src="img/header/logo.svg" alt="logo"></a>
+                        <div class="billboard__logo-text title-bold">
+                            SolarBox
+                        </div>
+                    </div>
+                    <nav class="billboard__menu-board">
+                        <input type="checkbox" id="billboard__check-menu">
+                        <label class="billboard__check-menu-label" for="billboard__check-menu"></label>
+                            <div class="billboard__burger-line billboard__burger-line_first"></div>
+                            <div class="billboard__burger-line billboard__burger-line_second"></div>
+                            <div class="billboard__burger-line billboard__burger-line_third"></div>
+                            <div class="billboard__burger-line billboard__burger-line_fourth"></div>
+                        <ul class="billboard__menu">
+                            <li class="billboard__menu-item subtitle billboard__menu-item_white-space_nowrap"><a href="#">about us</a></li>
+                            <li class="billboard__menu-item subtitle"><a href="#">focus</a></li>
+                            <li class="billboard__menu-item subtitle"><a href="#">scp</a></li>
+                            <li class="billboard__menu-item subtitle"><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="billboard__select-box">
+                        <select class="billboard__select" size="1" name="select-lang">
+                            <option class="billboard__select-item billboard__select_color-1" value="en">en</option>
+                            <option class="billboard__select-item billboard__select_color-2" value="it">it</option>
+                            <option class="billboard__select-item billboard__select_color-3" value="ru">ru</option>
+                        </select>
+                    </div>
+                </div>    
+            </header>    
+            <div class="billboard__title">
+                <h1 class="billboard__title-text">SolarBox</h1>
+                <div class="billboard__subtitle">
+                    We build sustainable environment                     
+                </div>
+                <div class="billboard__play-icon">
+                    <div class="billboard__play-container">
+                        <a class="billboard__play-ellipse" href="#"><img src="img/header/Ellipse 3.svg" alt="video_button"></a>
+                        <a class="billboard__play-arrow" href="#"><img src="img/header/Polygon 1.svg" alt="video_button_arrow"></a>
+                    </div>                    
+                </div>
+                <a class="billboard__scroll-icon" href="#" onclick="scrollFunction();return false;"><img src="img/header/scroll_button.svg" alt="scroll_button"></a>
+                <!--  -->
+                <!-- <button onclick="scrollFunction()" class="billboard__scroll-icon"><img src="img/header/scroll_button.svg" alt="scroll_button"></button> -->
+                <script>
+                    // When the user clicks on the button, scroll to the top of the document
+                    function scrollFunction() {
+                    document.body.scrollTop = 690; // For Safari
+                    // 689.469;
+                    document.documentElement.scrollTop = 690; // For Chrome, Firefox, IE and Opera
+                    // 689.469;
+                  }
+                </script>  
+                        <!-- </div> -->
+            </div>                
+        </div>
+        <!-- Button to top -->
+        <a href="#" onclick="topFunction();return false;" class="button-up"><img src="img/arrow/arrow-up_3.png" alt="go to top"></a>
+        <script>
+            let goTop = document.querySelector('.button-up');
+            window.addEventListener('scroll', trackScroll);
+            goTop.addEventListener('click', backToTop);
+            function trackScroll() {
+                let scroll = window.pageYOffset;
+                let coord = document.documentElement.clientHeight;
+
+                if (scroll > coord) {
+                    goTop.classList.add('button-up-show');
+                }
+                if (scroll < coord) { 
+                    goTop.classList.remove('button-up-show'); 
+                }
+            }
+            function backToTop() { 
+                if (window.pageYOffset > 0) {
+                    window.scrollBy(0, -80);
+                    // setTimeout(backToTop, -4);
+                }
+            }
+        </script>
+        <!-- Button to top end -->
+    </section>
+    <section class="logos">
+        <div class="wrapper">
+            <div class="logos__icons">
+                <div class="logos__items"><a href="#"><img src="img/logos/01.svg" alt="01"></a></div>
+                <div class="logos__items"><a href="#"><img src="img/logos/02.svg" alt="02"></a></div>
+                <div class="logos__items"><a href="#"><img src="img/logos/03.svg" alt="03"></a></div>
+                <div class="logos__items"><a href="#"><img src="img/logos/04.svg" alt="04"></a></div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="wrapper">
+            <div class="about__wrapper">
+                <header class="about__title-block">
+                    <h2 class="about__title title">About us</h2>
+                    <div class="about__subtitle subtitle">For nearly twenty-five years, SolarBox has developed,
+                         implemented and financed sustainable focus 
+                        that recapture and reinvest otherwise lost resources.
+                    </div>
+                </header>                     
+                <div class="about__figure"></div>
+                <div class="about__img"></div>
+            </div>
+        </div>
+    </section>
+    <section class="focus">
+        <div class="wrapper">
+            <div class="focus_row row focus__row_no-right">
+                <div class="focus__header">
+                    <h2 class="focus__header-title title">
+                        Our focus
+                    </h2>
+                    <div class="focus__header-subtitle subtitle">
+                        SolarBox's core focus includes:
+                    </div>         
+                </div>
+                <div class="focus__column-1 column">
+                    <div class="column__item">
+                        <div class="column__item-title title-bold">
+                            <a class="column__item-link" href="#">Sustainable Profits</a> 
+                        </div>        
+                    </div>
+                </div>
+                <div class="focus__column-2 column">
+                    <div class="column__item">
+                        <div class="column__item-title title-bold">
+                            <a class="column__item-link" href="#">Sustainable Infrastructure</a> 
+                        </div>      
+                    </div>
+                </div>    
+                <div class="focus__column-3 column">
+                    <div class="column__item">
+                        <div class="column__item-title title-bold">
+                            <a class="column__item-link" href="#">Sustainable Environment</a> 
+                        </div>        
+                    </div>
+                </div>
+                <div class="focus__column-4 column">
+                    <div class="column__item">
+                        <div class="column__item-title title-bold">
+                            <a class="column__item-link" href="#">Sustainable Environment</a> 
+                        </div>        
+                    </div>                                       
+                </div>
+                <div class="focus__column-5 column">                    
+                    <div class="column__item">
+                        <div class="column__item-title title-bold">
+                            <a class="column__item-link" href="#">Sustainable Communities</a> 
+                        </div>        
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <section class="numbers">
+        <div class="wrapper">
+            <div class="numbers__row">
+                <div class="numbers__column">
+                    <div class="numbers__description subtitle">
+                        For nearly twenty-five years, SolarBox has developed, implemented and 
+                        financed sustainable focus that recapture and reinvest otherwise 
+                        lost resources. Utilizing world-class project development expertise, 
+                        ThinkBox has achieved:
+                    </div>
+                </div>    
+                    <div class="numbers__column numbers_size">
+                        <!-- <div class="numbers__item"> -->
+                            <a href="#" class="number__img"><img src="img/numbers/01.svg" width="80" height="80" alt="01"></a>
+                        <!-- </div> -->
+                            <div class="numbers__title-block">
+                                <div class="numbers__title title">
+                                    $150M
+                                </div>
+                                <div class="numbers_subtitle subtitle">
+                                    Raised for critical infrastructure over more
+                                    than 5M s.f. of space.
+                                </div>                                                        
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="numbers__column numbers_size">
+                        <a href="#" class="number__img"><img src="img/numbers/01.svg" alt="01"></a>
+                        <div class="numbers__title-block">
+                            <div class="numbers__title title">
+                                $210M
+                            </div>
+                            <div class="numbers_subtitle subtitle">
+                                Saved to our Project Partners in utility <br>
+                                and repair expenses.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="numbers__column numbers_size">
+                        <a href="#" class="number__img"><img src="img/numbers/mod/02.png" alt="02"></a>
+                        <div class="numbers__title-block">
+                            <div class="numbers__title title">
+                                12,000+
+                            </div>
+                            <div class="numbers_subtitle subtitle">
+                                Equivalent of car removed from the road.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="numbers__column numbers_size">
+                        <a href="#" class="number__img numbers_left-2"><img src="img/numbers/mod/03.png" alt="03"></a>
+                            <!-- width="80" height="80"   -->
+                            <div class="numbers__title-block">
+                            <div class="numbers__title title">
+                                24.9M
+                            </div>
+                            <div class="numbers_subtitle subtitle">
+                                Of saved kilowatt hours & 9.3M therms
+                                of energy since 2009.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="numbers__column numbers_size">
+                        <a href="#" class="number__img numbers_left-2"><img src="img/numbers/mod/1/04.png" alt="04"></a>
+                        <div class="numbers__title-block">
+                            <div class="numbers__title title">
+                                3.5B
+                            </div>
+                            <div class="numbers_subtitle subtitle">
+                                Gallons of water saved since 2009.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="projects">
+        <div class="wrapper">
+            <div class="projects_row row projects__row_no-right">
+                    <div class="projects__header">
+                        <h2 class="projects__header-title title">
+                            Our Projects
+                        </h2>
+                        <!-- <div class="projects__header-subtitle subtitle">
+                            SolarBox's core focus includes:
+                        </div>          -->
+                        <a href="#" class="projects__button button">
+                            SEE ALL
+                        </a>
+                    </div>
+                    <div class="projects__column-1 column">
+                        <div class="column__item">
+                            <div class="column__item-title title-bold">
+                                <a class="column__item-link" href="#">D.C. Housing Authority</a> 
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="projects__column-2 column">
+                        <div class="column__item">
+                            <div class="column__item-title title-bold">
+                                <a class="column__item-link" href="#">Phyllis Wheatley YWCA</a> 
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="projects__column-3 column">
+                        <div class="column__item">
+                            <div class="column__item-title title-bold">
+                                <a class="column__item-link" href="#">Elsie Whitlow Stokes</a> 
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="projects__column-4 column">
+                        <div class="column__item">
+                            <div class="column__item-title title-bold">
+                                <a class="column__item-link" href="#">MARTA Project</a>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="map">
+        <div class="wrapper">
+            <div class="map__conteiner">
+                <div class="map__address">
+                    <header class="map__header">
+                        <a href="#" class="map__logo"><img src="img/map/logo.svg" alt="logo"></a>
+                        <h2 class="map__title title-bold">SolarBox</h2>
+                    </header>
+                    <div class="map__address-item">
+                        <h3 class="map__address-title map_font-style">ADDRESS</h3>
+                        <div class="map__address-descript subtitle">
+                            971 Timber Wolf <br> Trail undefined Stamford, Delaware 90039 
+                            United States
+                        </div>
+                        <h3 class="map__address-title map_font-style">MAIL</h3>
+                        <div class="map__address-descript subtitle">
+                            <a href="#" class="map__mail-link subtitle">info@solarbxx.com</a>
+                        </div>                    
+                    </div>
+                    <div class="map__social">
+                        <div class="social map__social">
+                            <a href="#" class="social__icon"><img src="img/map/Facebook.svg" alt="Facebook"></a>
+                            <a href="#" class="social__icon"><img src="img/map/Twitter.svg" alt="Twitter"></a>
+                            <a href="#" class="social__icon"><img src="img/map/Linkedin.svg" alt="Linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__map-block">
+                    <div id="map__map-item">
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143494.86491623629!2d38.8346975935457!3d55.80873818252006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414b1c7e8e89e903%3A0x2489581359276ac7!2z0J7RgNC10YXQvtCy0L4t0JfRg9C10LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1452761646368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    </div>
+                    <script>
+                            // Initialize and add the map
+                            function initMap() {
+                            // The location of Uluru
+                            var uluru = {lat: 34.0737179, lng: -118.3334773};
+                            // The map, centered at Uluru
+                            var map = new google.maps.Map(
+                                document.getElementById('map__map-item'), {zoom: 8, center: uluru});
+                            // The marker, positioned at Uluru
+                            var marker = new google.maps.Marker({position: uluru, map: map__map-item});
+                            }
+                      </script>
+                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCISY90Xz0opQkpEaPA1T2xgMUWBDEBw9s&callback=initMap"
+                      async defer></script>
+                    <a class="map__button button" href="#">We are here</a>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <!-- <div class="footer__container"> -->
+                <nav class="footer__menu">
+                    <div class="footer__column footer_size-1">
+                        <ul class="menu-down">
+                            <li class="menu-down__title">
+                                <a href="#">INFORMATION</a>                                
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Our People</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Our Partners</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column footer_size-2">
+                        <ul class="menu-down">
+                            <li class="menu-down__title">
+                                <a href="#">PROJECTS</a>                                
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Case Studies</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Project Photos</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Written Testimonials</a>
+                            </li>
+                            <!-- <li class="menu-down__item">
+                                <a href="#">FAQ</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="footer__column footer_size-3">
+                        <ul class="menu-down">
+                            <li class="menu-down__title">
+                                <a href="#">SCP</a>                                
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Impact</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Hosts</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Founders Village</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Photo Gallery</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">ThinkBetter Fund</a>
+                            </li>
+                            <li class="menu-down__item">
+                                <a href="#">Contact Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__title">
+                            CONTACT
+                        </div>
+                        <div class="footer__address subtitle">
+                        971 Timber Wolf Trail undefined Stamford, Delaware 90039
+                        United States
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <div class="social">
+                            <a href="#" class="social__icon"><img src="img/map/Facebook.svg" alt="Facebook"></a>
+                            <a href="#" class="social__icon"><img src="img/map/Twitter.svg" alt="Twitter"></a>
+                            <a href="#" class="social__icon"><img src="img/map/Linkedin.svg" alt="Linkedin"></a>
+                        </div>
+                    </div> 
+                </nav>
+            <!-- </div> -->
+            <div class="footer__info">
+                <div class="footer__wrap-info">
+                    <div class="footer__by">Design by 
+                        <!-- <div class="footer__by-link"> -->
+                            <a class="footer__by-link" href="#">Branko Markovic</a>
+                        <!-- </div>  -->
+                    </div>
+                    <div class="footer__policy">
+                        <a class="footer__policy-item" href="#">Privacy Policy</a>
+                        <a class="footer__policy-item" style="width: 45.23%;" href="#">Terms and Conditions</a>
+                        <a class="footer__policy-item" href="#">Contact Us</a>
+                        <!-- <div class="footer__policy-item">Privacy Policy</div>
+                        <div class="footer__policy-item" style="width: 45.23%;">Terms and Conditions</div>
+                        <div class="footer__policy-item">Contact Us</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
