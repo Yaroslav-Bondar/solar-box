@@ -5,18 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script async src="js/jquery_3_5_1_c.js"></script>
-    <script async src="js/header-fixed.js"></script>
-    <!-- <script async src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-    <script  src="js/click.js"></script>
     <title>Solar Box</title>
 </head>
 <body>
-    <!-- <script async>
-        $(document).ready(function(){
-        alert(jQuery.fn.jquery);
-        });
-    </script> -->
+    <header class="billboard__header billboard__header-fixed">
+        <div class="wrapper">
+            <div class="billboard__wrapper">
+                <div class="billboard__logo-block">
+                    <a href="#" class="billboard__logo-img"><img src="img/header/logo.svg" alt="logo"></a>
+                    <div class="billboard__logo-text title-bold">
+                        SolarBox
+                    </div>
+                </div>
+                <nav class="billboard__menu-board-fixed">
+                    <!-- <input type="checkbox" id="billboard__check-menu"> -->
+                    <!-- <label class="billboard__check-menu-label" for="billboard__check-menu"></label> -->
+                    <div class="burger burger__fixed">
+                        <div class="burger__line-fixed burger-line"></div>
+                        <div class="burger__line-fixed burger-line"></div>
+                        <div class="burger__line-fixed burger-line"></div>
+                    </div>
+                    <div class="billboard__menu-fixed">
+                        <div class="billboard__menu-item-fixed subtitle"><a href="#">about us</a></div>
+                        <div class="billboard__menu-item-fixed subtitle"><a href="#">focus</a></div>
+                        <div class="billboard__menu-item-fixed subtitle"><a href="#">scp</a></div>
+                        <div class="billboard__menu-item-fixed subtitle"><a href="#">contact</a></div>
+                    </div>
+                        <!-- <div class="billboard__burger-line billboard__burger-line_fourth"></div> -->
+                </nav>
+                <div class="billboard__select-box">
+                    <select class="billboard__select select__fixed" size="1" name="select-lang">
+                        <option class="billboard__select-item billboard__select_color-1" value="en">en</option>
+                        <option class="billboard__select-item billboard__select_color-2" value="it">it</option>
+                        <option class="billboard__select-item billboard__select_color-3" value="ru">ru</option>
+                    </select>
+                </div>
+            </div> 
+        </div>
+    </header>  
     <section class="billboard">
         <div class="wrapper">
             <header class="billboard__header">
@@ -27,7 +53,7 @@
                             SolarBox
                         </div>
                     </div>
-                    <nav class="billboard__menu-board">
+                    <!-- <nav class="billboard__menu-board">
                         <input type="checkbox" id="billboard__check-menu">
                         <label class="billboard__check-menu-label" for="billboard__check-menu"></label>
                             <div class="billboard__burger-line billboard__burger-line_first"></div>
@@ -40,6 +66,19 @@
                             <li class="billboard__menu-item subtitle"><a href="#">scp</a></li>
                             <li class="billboard__menu-item subtitle"><a href="#">contact</a></li>
                         </ul>
+                    </nav> -->
+                    <nav class="billboard__menu-board">
+                        <ul class="billboard__menu">
+                            <li class="billboard__menu-item subtitle billboard__menu-item_white-space_nowrap"><a href="#">about us</a></li>
+                            <li class="billboard__menu-item subtitle"><a href="#">focus</a></li>
+                            <li class="billboard__menu-item subtitle"><a href="#">scp</a></li>
+                            <li class="billboard__menu-item subtitle"><a href="#">contact</a></li>
+                        </ul>
+                        <div class="burger billboard__burger">
+                            <div class="billboard__burger-line burger-line"></div>
+                            <div class="billboard__burger-line burger-line"></div>
+                            <div class="billboard__burger-line burger-line"></div>
+                        </div>
                     </nav>
                     <div class="billboard__select-box">
                         <select class="billboard__select" size="1" name="select-lang">
@@ -61,19 +100,7 @@
                         <a class="billboard__play-arrow" href="#"><img src="img/header/Polygon 1.svg" alt="video_button_arrow"></a>
                     </div>                    
                 </div>
-                <a class="billboard__scroll-icon" href="#" onclick="scrollFunction();return false;"><img src="img/header/scroll_button.svg" alt="scroll_button"></a>
-                <!--  -->
-                <!-- <button onclick="scrollFunction()" class="billboard__scroll-icon"><img src="img/header/scroll_button.svg" alt="scroll_button"></button> -->
-                <script>
-                    // When the user clicks on the button, scroll to the top of the document
-                    function scrollFunction() {
-                    document.body.scrollTop = 690; // For Safari
-                    // 689.469;
-                    document.documentElement.scrollTop = 690; // For Chrome, Firefox, IE and Opera
-                    // 689.469;
-                  }
-                </script>  
-                        <!-- </div> -->
+                <button class="billboard__scroll-icon"><img src="img/header/scroll_button.svg"></button>
             </div>                
         </div>
         <!-- Button to top -->
@@ -329,7 +356,7 @@
                     <div id="map__map-item">
                         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143494.86491623629!2d38.8346975935457!3d55.80873818252006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414b1c7e8e89e903%3A0x2489581359276ac7!2z0J7RgNC10YXQvtCy0L4t0JfRg9C10LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1452761646368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                     </div>
-                    <script>
+                    <!-- <script>
                             // Initialize and add the map
                             function initMap() {
                             // The location of Uluru
@@ -342,7 +369,7 @@
                             }
                       </script>
                       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCISY90Xz0opQkpEaPA1T2xgMUWBDEBw9s&callback=initMap"
-                      async defer></script>
+                      async defer></script> -->
                     <a class="map__button button" href="#">We are here</a>
                 </div>
             </div>    
@@ -452,5 +479,12 @@
             </div>
         </div>
     </footer>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script async src="js/jquery_3_5_1_c.js"></script> -->
+<script src="js/header-fixed.js"></script>
+<!-- <script async src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+<script src="js/click.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/scrollButton.js"></script>
 </body>
 </html>
