@@ -4,130 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.css">   <!-- connect swiper slider styles -->
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Solar Box</title>
 </head>
 <body>
+    <!-- Button to top start -->
+    <button class="button-up arrow"></button>
+    <!-- Button to top finish -->
+    <!-- burger menu s -->
+    <nav class="menu-burger">
+        <a href="#" class="menu-burger__link">about us</a>
+        <a href="#" class="menu-burger__link">focus</a>
+        <a href="#" class="menu-burger__link">scp</a>
+        <a href="#" class="menu-burger__link">contact</a>
+        <a href="#" class="menu-burger__link">this</a>
+        <a href="#" class="menu-burger__link">menu</a>
+        <a href="#" class="menu-burger__link">can</a>
+        <a href="#" class="menu-burger__link">be</a>
+        <a href="#" class="menu-burger__link">scrolled</a>
+        <a href="#" class="menu-burger__link">this</a>
+        <a href="#" class="menu-burger__link">menu</a>
+        <a href="#" class="menu-burger__link">can</a>
+        <a href="#" class="menu-burger__link">be</a>
+        <a href="#" class="menu-burger__link">scrolled</a>
+        <a href="#" class="menu-burger__link">this</a>
+        <a href="#" class="menu-burger__link">menu</a>
+        <a href="#" class="menu-burger__link">can</a>
+        <a href="#" class="menu-burger__link">be</a>
+        <a href="#" class="menu-burger__link">scrolled</a>
+        <a href="#" class="menu-burger__link">this</a>
+        <a href="#" class="menu-burger__link">menu</a>
+        <a href="#" class="menu-burger__link">can</a>
+        <a href="#" class="menu-burger__link">be</a>
+        <a href="#" class="menu-burger__link">scrolled</a>
+    </nav>
+    <!-- burger menu f -->
+    <!-- menu fixed s-->
     <header class="billboard__header billboard__header-fixed">
+        <div class="header-fixed__wrapper">
+            <div class="billboard__logo-block">
+                <a href="#" class="billboard__logo-img header-fixed__logo-img"><img src="img/header/logo.svg" alt="logo"></a>
+                <div class="billboard__logo-text title-bold">
+                    SolarBox
+                </div>
+            </div>
+            <nav class="billboard__menu-board-fixed">
+                <div class="billboard__menu-fixed">
+                    <div class="billboard__menu-item-fixed subtitle"><a href="#">about us</a></div>
+                    <div class="billboard__menu-item-fixed subtitle"><a href="#">focus</a></div>
+                    <div class="billboard__menu-item-fixed subtitle"><a href="#">scp</a></div>
+                    <div class="billboard__menu-item-fixed subtitle"><a href="#">contact</a></div>
+                </div>
+            </nav>
+            <div class="burger burger__fixed">
+                <div class="burger__line-fixed burger-line"></div>
+                <div class="burger__line-fixed burger-line"></div>
+                <div class="burger__line-fixed burger-line"></div>
+            </div>
+            <div class="billboard__select-box">
+                <select class="billboard__select select__fixed" size="1" name="select-lang">
+                    <option class="select__fixed-item" value="en">en</option>
+                    <option class="select__fixed-item" value="it">it</option>
+                    <option class="select__fixed-item" value="ru">ru</option>
+                </select>
+            </div>
+        </div> 
+    </header>
+    <!-- menu-burger__fixed begin -->
+    <nav class="menu-burger__fixed">
+        <a href="#" class="menu-burger__fixed-link">about us</a>
+        <a href="#" class="menu-burger__fixed-link">focus</a>
+        <a href="#" class="menu-burger__fixed-link">scp</a>
+        <a href="#" class="menu-burger__fixed-link">contact</a>
+        <a href="#" class="menu-burger__fixed-link">this</a>
+        <a href="#" class="menu-burger__fixed-link">menu</a>
+        <a href="#" class="menu-burger__fixed-link">can</a>
+        <a href="#" class="menu-burger__fixed-link">be</a>
+        <a href="#" class="menu-burger__fixed-link">scrolled</a>
+        <a href="#" class="menu-burger__fixed-link">this</a>
+        <a href="#" class="menu-burger__fixed-link">menu</a>
+        <a href="#" class="menu-burger__fixed-link">can</a>
+        <a href="#" class="menu-burger__fixed-link">be</a>
+        <a href="#" class="menu-burger__fixed-link">scrolled</a>
+        <a href="#" class="menu-burger__fixed-link">this</a>
+        <a href="#" class="menu-burger__fixed-link">menu</a>
+        <a href="#" class="menu-burger__fixed-link">can</a>
+        <a href="#" class="menu-burger__fixed-link">be</a>
+        <a href="#" class="menu-burger__fixed-link">scrolled</a>
+        <a href="#" class="menu-burger__fixed-link">this</a>
+        <a href="#" class="menu-burger__fixed-link">menu</a>
+        <a href="#" class="menu-burger__fixed-link">can</a>
+        <a href="#" class="menu-burger__fixed-link">be</a>
+        <a href="#" class="menu-burger__fixed-link">scrolled</a>
+    </nav>
+    <!-- menu-burger__fixed finish -->  
+    <!-- menu fixed f -->
+    <section class="billboard">
         <div class="wrapper">
-            <div class="billboard__wrapper">
+            <header class="billboard__header">
                 <div class="billboard__logo-block">
                     <a href="#" class="billboard__logo-img"><img src="img/header/logo.svg" alt="logo"></a>
                     <div class="billboard__logo-text title-bold">
                         SolarBox
                     </div>
                 </div>
-                <nav class="billboard__menu-board-fixed">
-                    <!-- <input type="checkbox" id="billboard__check-menu"> -->
-                    <!-- <label class="billboard__check-menu-label" for="billboard__check-menu"></label> -->
-                    <div class="burger burger__fixed">
-                        <div class="burger__line-fixed burger-line"></div>
-                        <div class="burger__line-fixed burger-line"></div>
-                        <div class="burger__line-fixed burger-line"></div>
+                <nav class="billboard__menu-board">
+                    <ul class="billboard__menu">
+                        <li class="billboard__menu-item subtitle billboard__menu-item_white-space_nowrap"><a href="#">about us</a></li>
+                        <li class="billboard__menu-item subtitle"><a href="#">focus</a></li>
+                        <li class="billboard__menu-item subtitle"><a href="#">scp</a></li>
+                        <li class="billboard__menu-item subtitle"><a href="#">contact</a></li>
+                    </ul>
+                    <div class="burger billboard__burger">
+                        <div class="billboard__burger-line burger-line"></div>
+                        <div class="billboard__burger-line burger-line"></div>
+                        <div class="billboard__burger-line burger-line"></div>
                     </div>
-                    <div class="billboard__menu-fixed">
-                        <div class="billboard__menu-item-fixed subtitle"><a href="#">about us</a></div>
-                        <div class="billboard__menu-item-fixed subtitle"><a href="#">focus</a></div>
-                        <div class="billboard__menu-item-fixed subtitle"><a href="#">scp</a></div>
-                        <div class="billboard__menu-item-fixed subtitle"><a href="#">contact</a></div>
-                    </div>
-                        <!-- <div class="billboard__burger-line billboard__burger-line_fourth"></div> -->
                 </nav>
                 <div class="billboard__select-box">
-                    <select class="billboard__select select__fixed" size="1" name="select-lang">
-                        <option class="billboard__select-item billboard__select_color-1" value="en">en</option>
-                        <option class="billboard__select-item billboard__select_color-2" value="it">it</option>
-                        <option class="billboard__select-item billboard__select_color-3" value="ru">ru</option>
+                    <select class="billboard__select" size="1" name="select-lang">
+                        <option class="billboard__select-item" value="en">en</option>
+                        <option class="billboard__select-item" value="it">it</option>
+                        <option class="billboard__select-item" value="ru">ru</option>
                     </select>
                 </div>
-            </div> 
-        </div>
-    </header>  
-    <section class="billboard">
-        <div class="wrapper">
-            <header class="billboard__header">
-                <div class="billboard__wrapper">
-                    <div class="billboard__logo-block">
-                        <a href="#" class="billboard__logo-img"><img src="img/header/logo.svg" alt="logo"></a>
-                        <div class="billboard__logo-text title-bold">
-                            SolarBox
-                        </div>
+            </header>
+            <div class="billboard__wrapper">
+                <div class="billboard__title">
+                    <h1 class="billboard__title-text">SolarBox</h1>
+                    <div class="billboard__subtitle">
+                        We build sustainable environment                     
                     </div>
-                    <!-- <nav class="billboard__menu-board">
-                        <input type="checkbox" id="billboard__check-menu">
-                        <label class="billboard__check-menu-label" for="billboard__check-menu"></label>
-                            <div class="billboard__burger-line billboard__burger-line_first"></div>
-                            <div class="billboard__burger-line billboard__burger-line_second"></div>
-                            <div class="billboard__burger-line billboard__burger-line_third"></div>
-                            <div class="billboard__burger-line billboard__burger-line_fourth"></div>
-                        <ul class="billboard__menu">
-                            <li class="billboard__menu-item subtitle billboard__menu-item_white-space_nowrap"><a href="#">about us</a></li>
-                            <li class="billboard__menu-item subtitle"><a href="#">focus</a></li>
-                            <li class="billboard__menu-item subtitle"><a href="#">scp</a></li>
-                            <li class="billboard__menu-item subtitle"><a href="#">contact</a></li>
-                        </ul>
-                    </nav> -->
-                    <nav class="billboard__menu-board">
-                        <ul class="billboard__menu">
-                            <li class="billboard__menu-item subtitle billboard__menu-item_white-space_nowrap"><a href="#">about us</a></li>
-                            <li class="billboard__menu-item subtitle"><a href="#">focus</a></li>
-                            <li class="billboard__menu-item subtitle"><a href="#">scp</a></li>
-                            <li class="billboard__menu-item subtitle"><a href="#">contact</a></li>
-                        </ul>
-                        <div class="burger billboard__burger">
-                            <div class="billboard__burger-line burger-line"></div>
-                            <div class="billboard__burger-line burger-line"></div>
-                            <div class="billboard__burger-line burger-line"></div>
-                        </div>
-                    </nav>
-                    <div class="billboard__select-box">
-                        <select class="billboard__select" size="1" name="select-lang">
-                            <option class="billboard__select-item billboard__select_color-1" value="en">en</option>
-                            <option class="billboard__select-item billboard__select_color-2" value="it">it</option>
-                            <option class="billboard__select-item billboard__select_color-3" value="ru">ru</option>
-                        </select>
-                    </div>
-                </div>    
-            </header>    
-            <div class="billboard__title">
-                <h1 class="billboard__title-text">SolarBox</h1>
-                <div class="billboard__subtitle">
-                    We build sustainable environment                     
                 </div>
-                <div class="billboard__play-icon">
-                    <div class="billboard__play-container">
-                        <a class="billboard__play-ellipse" href="#"><img src="img/header/Ellipse 3.svg" alt="video_button"></a>
-                        <a class="billboard__play-arrow" href="#"><img src="img/header/Polygon 1.svg" alt="video_button_arrow"></a>
-                    </div>                    
-                </div>
-                <button class="billboard__scroll-icon"><img src="img/header/scroll_button.svg"></button>
-            </div>                
+                <button class="billboard__play"><img src="img/header/arrow.svg" alt="arrow" class="billboard__play-icon"></button>
+                <button class="billboard__but-scroll"><img class="billboard__scroll-icon" src="img/header/scroll_button.svg"></button>                
+            </div>    
         </div>
-        <!-- Button to top -->
-        <a href="#" onclick="topFunction();return false;" class="button-up"><img src="img/arrow/arrow-up_3.png" alt="go to top"></a>
-        <script>
-            let goTop = document.querySelector('.button-up');
-            window.addEventListener('scroll', trackScroll);
-            goTop.addEventListener('click', backToTop);
-            function trackScroll() {
-                let scroll = window.pageYOffset;
-                let coord = document.documentElement.clientHeight;
-
-                if (scroll > coord) {
-                    goTop.classList.add('button-up-show');
-                }
-                if (scroll < coord) { 
-                    goTop.classList.remove('button-up-show'); 
-                }
-            }
-            function backToTop() { 
-                if (window.pageYOffset > 0) {
-                    window.scrollBy(0, -80);
-                    // setTimeout(backToTop, -4);
-                }
-            }
-        </script>
-        <!-- Button to top end -->
     </section>
     <section class="logos">
         <div class="wrapper">
@@ -141,17 +156,50 @@
     </section>
     <section class="about">
         <div class="wrapper">
-            <div class="about__wrapper">
-                <header class="about__title-block">
-                    <h2 class="about__title title">About us</h2>
-                    <div class="about__subtitle subtitle">For nearly twenty-five years, SolarBox has developed,
-                         implemented and financed sustainable focus 
-                        that recapture and reinvest otherwise lost resources.
+            <header class="about__title-block">
+                <div class="about__wrapper">
+                    <div class="about__text-block">
+                        <h2 class="about__title title">About us</h2>
+                        <div class="about__subtitle subtitle">For nearly twenty-five years, SolarBox has developed,
+                            implemented and financed sustainable focus 
+                            that recapture and reinvest otherwise lost resources.
+                        </div>
                     </div>
-                </header>                     
-                <div class="about__figure"></div>
-                <div class="about__img"></div>
-            </div>
+                    <div class="about__slider-unit">
+                        <!-- swiper-button-prev -->
+                        <div class="about__slider-button-prev arrow"></div>
+                        <!-- Slider main container -->
+                        <div class="about__slider-container swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="about__slider-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="about__slide swiper-slide">
+                                    <img src="img/about/slide_01.jpg" alt="About" class="about__slide-img">
+                                    <div class="about__slide-text-box">
+                                        <div class="about__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque ullam amet sit iure odit quibusdam minus laudantium! Eaque laboriosam delectus quia minima pariatur id perspiciatis deleniti inventore quidem nisi.</div>
+                                    </div>
+                                </div>
+                                <div class="about__slide swiper-slide">
+                                    <img src="img/about/slide_02.jpg" alt="About" class="about__slide-img">
+                                    <div class="about__slide-text-box">
+                                        <div class="about__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque ullam amet sit iure odit quibusdam minus laudantium! Eaque laboriosam delectus quia minima pariatur id perspiciatis deleniti inventore quidem nisi.</div>
+                                    </div>
+                                </div>
+                                <div class="about__slide swiper-slide">
+                                    <img src="img/about/slide_03.jpg" alt="About" class="about__slide-img">
+                                    <div class="about__slide-text-box">
+                                        <div class="about__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque ullam amet sit iure odit quibusdam minus laudantium! Eaque laboriosam delectus quia minima pariatur id perspiciatis deleniti inventore quidem nisi.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper-button-next -->
+                        <div class="about__slider-button-next arrow"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="about__slide-pagination"></div>
+                </div>
+            </header>                     
         </div>
     </section>
     <section class="focus">
@@ -215,9 +263,7 @@
                     </div>
                 </div>    
                     <div class="numbers__column numbers_size">
-                        <!-- <div class="numbers__item"> -->
                             <a href="#" class="number__img"><img src="img/numbers/01.svg" width="80" height="80" alt="01"></a>
-                        <!-- </div> -->
                             <div class="numbers__title-block">
                                 <div class="numbers__title title">
                                     $150M
@@ -227,7 +273,6 @@
                                     than 5M s.f. of space.
                                 </div>                                                        
                             </div>
-                        <!-- </div> -->
                     </div>
                     <div class="numbers__column numbers_size">
                         <a href="#" class="number__img"><img src="img/numbers/01.svg" alt="01"></a>
@@ -243,7 +288,7 @@
                     </div>
                     
                     <div class="numbers__column numbers_size">
-                        <a href="#" class="number__img"><img src="img/numbers/mod/02.png" alt="02"></a>
+                        <a href="#" class="number__img"><img src="img/numbers/02.png" alt="02"></a>
                         <div class="numbers__title-block">
                             <div class="numbers__title title">
                                 12,000+
@@ -254,8 +299,7 @@
                         </div>
                     </div>
                     <div class="numbers__column numbers_size">
-                        <a href="#" class="number__img numbers_left-2"><img src="img/numbers/mod/03.png" alt="03"></a>
-                            <!-- width="80" height="80"   -->
+                        <a href="#" class="number__img numbers_left-2"><img src="img/numbers/03.png" alt="03"></a>
                             <div class="numbers__title-block">
                             <div class="numbers__title title">
                                 24.9M
@@ -267,7 +311,7 @@
                         </div>
                     </div>
                     <div class="numbers__column numbers_size">
-                        <a href="#" class="number__img numbers_left-2"><img src="img/numbers/mod/1/04.png" alt="04"></a>
+                        <a href="#" class="number__img numbers_left-2"><img src="img/numbers/04.png" alt="04"></a>
                         <div class="numbers__title-block">
                             <div class="numbers__title title">
                                 3.5B
@@ -287,9 +331,6 @@
                         <h2 class="projects__header-title title">
                             Our Projects
                         </h2>
-                        <!-- <div class="projects__header-subtitle subtitle">
-                            SolarBox's core focus includes:
-                        </div>          -->
                         <a href="#" class="projects__button button">
                             SEE ALL
                         </a>
@@ -355,30 +396,13 @@
                 <div class="map__map-block">
                     <div id="map__map-item">
                         <a href="#" class="map__map-item-links"><img src="img/map/Map.jpg" alt="map" class="map__map-img"></a>
-                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143494.86491623629!2d38.8346975935457!3d55.80873818252006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414b1c7e8e89e903%3A0x2489581359276ac7!2z0J7RgNC10YXQvtCy0L4t0JfRg9C10LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1452761646368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                     </div>
-                    <!-- <script>
-                            // Initialize and add the map
-                            function initMap() {
-                            // The location of Uluru
-                            var uluru = {lat: 34.0737179, lng: -118.3334773};
-                            // The map, centered at Uluru
-                            var map = new google.maps.Map(
-                                document.getElementById('map__map-item'), {zoom: 8, center: uluru});
-                            // The marker, positioned at Uluru
-                            var marker = new google.maps.Marker({position: uluru, map: map__map-item});
-                            }
-                      </script>
-                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCISY90Xz0opQkpEaPA1T2xgMUWBDEBw9s&callback=initMap"
-                      async defer></script> -->
-                    <a class="map__button button" href="#">We are here</a>
                 </div>
             </div>    
         </div>
     </section>
     <footer class="footer">
         <div class="wrapper">
-            <!-- <div class="footer__container"> -->
                 <nav class="footer__menu">
                     <div class="footer__column footer_size-1">
                         <ul class="menu-down">
@@ -413,9 +437,6 @@
                             <li class="menu-down__item">
                                 <a href="#">Written Testimonials</a>
                             </li>
-                            <!-- <li class="menu-down__item">
-                                <a href="#">FAQ</a>
-                            </li> -->
                         </ul>
                     </div>
                     <div class="footer__column footer_size-3">
@@ -460,32 +481,27 @@
                         </div>
                     </div> 
                 </nav>
-            <!-- </div> -->
             <div class="footer__info">
                 <div class="footer__wrap-info">
                     <div class="footer__by">Design by 
-                        <!-- <div class="footer__by-link"> -->
-                            <a class="footer__by-link" href="#">Branko Markovic</a>
-                        <!-- </div>  -->
+                        <a class="footer__by-link" href="#">Branko Markovic</a>
                     </div>
                     <div class="footer__policy">
                         <a class="footer__policy-item" href="#">Privacy Policy</a>
                         <a class="footer__policy-item" style="width: 45.23%;" href="#">Terms and Conditions</a>
                         <a class="footer__policy-item" href="#">Contact Us</a>
-                        <!-- <div class="footer__policy-item">Privacy Policy</div>
-                        <div class="footer__policy-item" style="width: 45.23%;">Terms and Conditions</div>
-                        <div class="footer__policy-item">Contact Us</div> -->
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-<!-- <script async src="js/jquery_3_5_1_c.js"></script> -->
-<script src="js/header-fixed.js"></script>
-<!-- <script async src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-<script src="js/click.js"></script>
+<script src="js/commonJs/commonJs.js"></script>
+<!-- menu burger -->
 <script src="js/burger.js"></script>
-<script src="js/scrollButton.js"></script>
+<!-- button to top -->
+<script src="js/commonJs/scrollButton.js"></script>
+<!-- connect swiper slider -->
+<script src="js/commonJs/swiperSlider/swiper-bundle.min.js"></script>
+<script src="js/aboutSwiperSlider.js"></script>
 </body>
 </html>

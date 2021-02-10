@@ -1,0 +1,391 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins Regular";
+}
+.lock {
+    overflow: hidden;
+}
+.wrapper {
+    max-width: 1291px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.arrow::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 0 3px 3px 0;
+    transition: border .2s;
+}
+.title {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.title-bold {
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+}
+.subtitle {
+    font-family: "Poppins Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+.item-row_title {
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    display: flex;
+    align-items: flex-end;
+    width: 32.18%;
+    flex: 32.18%;
+    height: 420px;
+    margin: 0 1.55% 20px  0;
+}
+.column__item {
+    width: 64.97%;
+}
+.column__item-title {
+    width: 100%;
+    height: 52px;
+    padding: 26px 0px 26px 0;
+    background: #252525;
+}
+.column__item-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 200ms steps(10, start) 0.2s;
+}
+.column__item-link:hover {
+    color: #EF3527;
+    transition: color 0.2s;
+}
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #252525;
+    text-decoration: none;
+    background: #EF3527;
+}
+.button:hover {
+    background: #FFA630;
+    transition: background 200ms steps(10, start) 0.2s;
+}
+.burger {
+    height: 27px;
+    width: 40px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+@media screen and  (max-width: 1104px) {
+    .column {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        flex: 32.18%;
+        height: 420px;
+        margin: 0 0 0 0;
+    }
+}
+@media screen and  (max-width: 422px) {
+    .title {
+        font-size: 55px;
+    }
+    .title-bold {
+        font-size: 27px;
+    }
+}
+@media screen and  (max-width: 390px) {
+    .title {
+        font-size: 48px;
+    }
+    .title-bold {
+        font-size: 24px;
+    }
+}
+
+/* menu burger s */
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 86.79px; /* высота .billboard__header */
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    --var-heightMenuBurger: 0px;           /* переменная для задания текущей высоты в burger.js*/       
+    height: var(--var-heightMenuBurger);   /* таким образом можно задать высоту меню и реализовать его вертикальную прокрутку*/
+    opacity: 0;
+    background-color: #252525;
+    overflow: auto;
+    padding-bottom: 20px;
+    transition-property: opacity transform;
+    transition: .3s;
+    z-index: 2;
+}
+.menu-burger_active {
+    transform: translateX(0);
+    opacity: 1;
+}
+.menu-burger__link {
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Poppins Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    transition: color .2s;
+}
+.menu-burger__link:hover {
+    color: #EF3527;
+}
+.menu-burger__link:first-child {
+    margin-top: 100px;
+}
+/* menu burger f */
+/* buton Up */
+.button-up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,166,48,0.8);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    z-index: 2;
+    transition: background .2s;
+    cursor: pointer;
+}
+.button-up::after {
+    border: solid #252525;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+}
+.button-up::after {
+    transform: translate(-50%, -30%) rotate(-135deg);
+    -webkit-transform: translate(-50%, -30%) rotate(-135deg);
+}
+.button-up:hover {
+    background: #FFA630;
+}
+.button-up_show {
+    display: block;
+}
+@media screen and (max-width:768px) {
+    .button-up {
+        bottom: 17px;
+        right: 17px;
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (max-width:450px) {
+    .button-up {
+        bottom: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+}
+/* buton Up End */
+/* billboard__header-fixed s*/
+.billboard__header-fixed {
+    position: fixed;
+    top: -87px;
+    left: 0;
+    padding: 8px 0 !important;
+    height: 52px !important;
+    transition: .2s;
+    background-color:#FFA630;
+    z-index: 2;
+}
+.billboard__header-fixed.active {
+    top: 0;
+}
+.header-fixed__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1291px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-fixed__logo-img img {
+    width: 43px;
+    height: 50px;
+    vertical-align: middle;
+}
+.billboard__menu-board-fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.select__fixed {
+    width: 69px;
+}
+.billboard__select_color-fixed {
+    background:#FFA630;
+}
+.select__fixed-item {
+    background:#FFA630;
+}
+/* billboard__header-fixed f*/
+/* burger fixed start */
+.burger__fixed:hover {
+    cursor: pointer;
+}
+.burger__fixed {
+    display: none;
+    margin: 0 7px 0 auto;
+}
+/* burger fixed finish */
+/* menu-burger__fixed begin */
+.menu-burger__fixed {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* top: 86px; */
+    --var-topMenuFixed: 0px;
+    top: var(--var-topMenuFixed);
+    right: 0;
+    transform: translateX(330px);
+    --var-heightMenuFixed: 0px;           /* переменная для задания текущей высоты в burger.js*/       
+    height: var(--var-heightMenuFixed);   /* таким образом можно задать высоту меню и реализовать его вертикальную прокрутку*/
+    min-width: 310px;
+    z-index: 3;
+    transition-property: transform, opacity;
+    transition: .2s;
+    background: rgba(255, 166, 48, 0.8);
+    opacity: 0;
+    overflow: auto;
+}
+.menu-burger__fixed_active {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+.billboard__menu-fixed {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+}
+.billboard__menu-item-fixed {
+    margin-right: 31px;
+}
+.billboard__menu-item-fixed:last-child {
+    margin-right: 0;
+}
+.billboard__menu-item-fixed a {
+    font-family: "Poppins Regular";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .2s;
+}
+.billboard__menu-item-fixed a:hover {
+    color: #EF3527;
+}
+.menu-burger__fixed-link {
+    margin: 0 0 15px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Poppins Regular";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    transition: color .2s;
+}
+.menu-burger__fixed-link:first-child {
+    margin-top: 15px;
+}
+.menu-burger__fixed-link:hover {    
+    color: #EF3527;
+}
+/* menu-burger__fixed finish */
+@media screen and (max-width:768px) {
+    .menu-burger__fixed {
+        transform: translateX(-100%);
+        width: 100%;
+        align-items: center;
+        opacity: 0;
+        transition: .3s; 
+    }
+}
+@media screen and (max-width:595px) {
+    .select__fixed {
+        width: 52px;
+    }
+}
+@media screen and (max-width:450px) {
+    .billboard__logo-img {
+        display: none;
+    }
+    .billboard__header-fixed {
+        height: 40px !important;
+    }
+    .billboard__logo-text {
+        margin-left: 0 !important;
+    }
+    /* .menu-burger {
+        top: 65.79px;
+    } */
+    .billboard__burger-line:nth-child(2) {
+        top: 12px;
+    }
+    .burger.active .burger__line-fixed:nth-child(3) {
+        transform: rotate(-45deg) translate(-4px,3.4px);
+    }
+}
+/* burger fixed f */

@@ -202,7 +202,9 @@
   select { /* 1 */
     text-transform: none;
   }
-  
+  button { 
+    padding: 0;
+  }
   /**
    * Correct the inability to style clickable types in iOS and Safari.
    */

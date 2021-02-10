@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Poppins Bold';
+	src: url('../fonts/poppins_bold/poppins_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/poppins_bold/poppins_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/poppins_bold/poppins_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins_bold/poppins_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/poppins_bold/poppins_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins_bold/poppins_bold.svg#poppins_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Poppins Regular';
+	src: url('../fonts/poppins_regular/poppins_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/poppins_regular/poppins_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/poppins_regular/poppins_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins_regular/poppins_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/poppins_regular/poppins_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins_regular/poppins_regular.svg#poppins_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Rubik';
+	src: url('../fonts/rubik_normal/rubik.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/rubik_normal/rubik.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/rubik_normal/rubik.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/rubik_normal/rubik.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/rubik_normal/rubik.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/rubik_normal/rubik.svg#rubik') format('svg'); /* Chrome < 4, Legacy iOS */
+}
