@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/swiper-bundle.css">   <!-- connect swiper slider styles -->
     <link rel="stylesheet" href="styles/fonts.css">
@@ -104,7 +104,7 @@
     <!-- menu fixed f -->
     <section class="billboard">
         <div class="wrapper">
-            <header class="billboard__header">
+            <header id="bill__header" class="billboard__header">
                 <div class="billboard__logo-block">
                     <a href="#" class="billboard__logo-img"><img src="img/header/logo.svg" alt="logo"></a>
                     <div class="billboard__logo-text title-bold">
@@ -140,17 +140,19 @@
                     </div>
                 </div>
                 <button class="billboard__play"><img src="img/header/arrow.svg" alt="arrow" class="billboard__play-icon"></button>
-                <button class="billboard__but-scroll"><img class="billboard__scroll-icon" src="img/header/scroll_button.svg"></button>                
+                <button class="billboard__but-scroll"><img class="billboard__scroll-icon" src="img/header/scroll_button.svg" alt="button"></button>                
             </div>    
         </div>
     </section>
     <section class="logos">
         <div class="wrapper">
             <div class="logos__icons">
-                <div class="logos__items"><a href="#"><img src="img/logos/01.svg" alt="01"></a></div>
-                <div class="logos__items"><a href="#"><img src="img/logos/02.svg" alt="02"></a></div>
-                <div class="logos__items"><a href="#"><img src="img/logos/03.svg" alt="03"></a></div>
-                <div class="logos__items"><a href="#"><img src="img/logos/04.svg" alt="04"></a></div>
+                <div class="logos__items"><a class="logos__link" href="#"><img src="img/logos/01.gif" class="logos__img" alt="sponsor_01"></a></div>
+                <div class="logos__items"><a class="logos__link" href="#"><img src="img/logos/02.jpg" class="logos__img" alt="sponsor_02"></a></div>
+                <div class="logos__items"><a class="logos__link" href="#"><img src="img/logos/01.gif" class="logos__img" alt="sponsor_03"></a></div>
+                <div class="logos__items"><a class="logos__link" href="#"><img src="img/logos/02.jpg" class="logos__img" alt="sponsor_04"></a></div>
+                <div class="logos__items"><a class="logos__link" href="#"><img src="img/logos/01.gif" class="logos__img" alt="sponsor_05"></a></div>
+                <div class="logos__items"><a class="logos__link" href="#"><img src="img/logos/02.jpg" class="logos__img" alt="sponsor_06"></a></div>
             </div>
         </div>
     </section>
@@ -204,47 +206,55 @@
     </section>
     <section class="focus">
         <div class="wrapper">
-            <div class="focus_row row focus__row_no-right">
-                <div class="focus__header">
-                    <h2 class="focus__header-title title">
-                        Our focus
-                    </h2>
-                    <div class="focus__header-subtitle subtitle">
-                        SolarBox's core focus includes:
-                    </div>         
+            <!-- focus__row_no-right -->
+            <div class="focus__row row">
+                <div class="focus__column column">
+                    <div class="focus__header">
+                        <h2 class="focus__header-title title">
+                            Our focus
+                        </h2>
+                        <div class="focus__header-subtitle subtitle">
+                            SolarBox's core focus includes:
+                        </div>         
+                    </div>
                 </div>
-                <div class="focus__column-1 column">
-                    <div class="column__item">
-                        <div class="column__item-title title-bold">
-                            <a class="column__item-link" href="#">Sustainable Profits</a> 
+                <div class="focus__column column">
+                    <img src="img/focus/01.png" alt="img_01" class="focus__column-img">
+                    <div class="focus__column-item column__item">
+                        <div class="column__item-title focus__column-title title-bold">
+                            <a class="column__item-link focus__column-item-link" href="#">Sustainable Profits</a> 
                         </div>        
                     </div>
                 </div>
-                <div class="focus__column-2 column">
-                    <div class="column__item">
-                        <div class="column__item-title title-bold">
-                            <a class="column__item-link" href="#">Sustainable Infrastructure</a> 
+                <div class="focus__column column">
+                    <img src="img/focus/02.png" alt="img_02" class="focus__column-img">
+                    <div class="focus__column-item column__item">
+                        <div class="column__item-title focus__column-title title-bold">
+                            <a class="column__item-link focus__column-item-link" href="#">Sustainable Infrastructure</a> 
                         </div>      
                     </div>
                 </div>    
-                <div class="focus__column-3 column">
-                    <div class="column__item">
-                        <div class="column__item-title title-bold">
-                            <a class="column__item-link" href="#">Sustainable Environment</a> 
+                <div class="focus__column column">
+                    <img src="img/focus/03.png" alt="img_03" class="focus__column-img">
+                    <div class="focus__column-item column__item">
+                        <div class="column__item-title focus__column-title title-bold">
+                            <a class="column__item-link focus__column-item-link" href="#">Sustainable Environment</a> 
                         </div>        
                     </div>
                 </div>
-                <div class="focus__column-4 column">
-                    <div class="column__item">
-                        <div class="column__item-title title-bold">
-                            <a class="column__item-link" href="#">Sustainable Environment</a> 
+                <div class="focus__column column">
+                    <img src="img/focus/04.png" alt="img_04" class="focus__column-img">
+                    <div class="focus__column-item column__item">
+                        <div class="column__item-title focus__column-title title-bold">
+                            <a class="column__item-link focus__column-item-link" href="#">Sustainable Environment</a> 
                         </div>        
                     </div>                                       
                 </div>
-                <div class="focus__column-5 column">                    
-                    <div class="column__item">
-                        <div class="column__item-title title-bold">
-                            <a class="column__item-link" href="#">Sustainable Communities</a> 
+                <div class="focus__column column">
+                    <img src="img/focus/05.png" alt="img_05" class="focus__column-img">
+                    <div class="focus__column-item column__item">
+                        <div class="column__item-title focus__column-title title-bold">
+                            <a class="column__item-link focus__column-item-link" href="#">Sustainable Communities</a> 
                         </div>        
                     </div>
                 </div>            
@@ -326,40 +336,46 @@
     </section>
     <section class="projects">
         <div class="wrapper">
-            <div class="projects_row row projects__row_no-right">
-                    <div class="projects__header">
-                        <h2 class="projects__header-title title">
-                            Our Projects
-                        </h2>
-                        <a href="#" class="projects__button button">
-                            SEE ALL
-                        </a>
-                    </div>
-                    <div class="projects__column-1 column">
-                        <div class="column__item">
-                            <div class="column__item-title title-bold">
-                                <a class="column__item-link" href="#">D.C. Housing Authority</a> 
+            <div class="projects_row row">
+                    <div class="projects__column column">
+                        <div class="projects__header">
+                            <h2 class="projects__header-title title">
+                                Our Projects
+                            </h2>
+                            <a href="#" class="projects__button button">
+                                SEE ALL
+                            </a>
+                        </div>
+                    </div>    
+                    <div class="projects__column column">
+                        <img src="img/projects/01.png" alt="img_01" class="projects__column-img">
+                        <div class="column__item projects__column-item">
+                            <div class="column__item-title projects__column-title title-bold">
+                                <a class="column__item-link projects__column-item-link" href="#">D.C. Housing Authority</a> 
                             </div>        
                         </div>
                     </div>
-                    <div class="projects__column-2 column">
-                        <div class="column__item">
-                            <div class="column__item-title title-bold">
-                                <a class="column__item-link" href="#">Phyllis Wheatley YWCA</a> 
+                    <div class="projects__column column">
+                        <img src="img/projects/02.png" alt="img_02" class="projects__column-img">    
+                        <div class="column__item projects__column-item">
+                            <div class="column__item-title projects__column-title title-bold">
+                                <a class="column__item-link projects__column-item-link" href="#">Phyllis Wheatley YWCA</a> 
                             </div>        
                         </div>
                     </div>
-                    <div class="projects__column-3 column">
-                        <div class="column__item">
-                            <div class="column__item-title title-bold">
-                                <a class="column__item-link" href="#">Elsie Whitlow Stokes</a> 
+                    <div class="projects__column column">
+                        <img src="img/projects/03.png" alt="img_03" class="projects__column-img">
+                        <div class="column__item projects__column-item">
+                            <div class="column__item-title projects__column-title title-bold">
+                                <a class="column__item-link projects__column-item-link" href="#">Elsie Whitlow Stokes</a> 
                             </div>        
                         </div>
                     </div>
-                    <div class="projects__column-4 column">
-                        <div class="column__item">
-                            <div class="column__item-title title-bold">
-                                <a class="column__item-link" href="#">MARTA Project</a>
+                    <div class="projects__column column">
+                        <img src="img/projects/04.png" alt="img_04" class="projects__column-img">
+                        <div class="column__item projects__column-item">
+                            <div class="column__item-title projects__column-title title-bold">
+                                <a class="column__item-link projects__column-item-link" href="#">MARTA Project</a>
                             </div>        
                         </div>
                     </div>
@@ -369,27 +385,31 @@
     <section class="map">
         <div class="wrapper">
             <div class="map__conteiner">
-                <div class="map__address">
-                    <header class="map__header">
-                        <a href="#" class="map__logo"><img src="img/map/logo.svg" alt="logo"></a>
-                        <h2 class="map__title title-bold">SolarBox</h2>
-                    </header>
-                    <div class="map__address-item">
-                        <h3 class="map__address-title map_font-style">ADDRESS</h3>
-                        <div class="map__address-descript subtitle">
-                            971 Timber Wolf <br> Trail undefined Stamford, Delaware 90039 
-                            United States
+                <div class="map__contact">
+                    <div class="map__address">
+                        <header class="map__header">
+                            <a href="#" class="map__logo"><img src="img/map/logo.svg" alt="logo"></a>
+                            <h2 class="map__title title-bold">SolarBox</h2>
+                        </header>
+                        <div class="map__address-item">
+                            <h3 class="map__address-title map_font-style">ADDRESS</h3>
+                            <div class="map__address-descript subtitle">
+                                971 Timber Wolf <br> Trail undefined Stamford, Delaware 90039 
+                                United States
+                            </div>
+                            <h3 class="map__address-title map_font-style">MAIL</h3>
+                            <div class="map__address-descript subtitle">
+                                <a href="#" class="map__mail-link subtitle">info@solarbxx.com</a>
+                            </div>                    
                         </div>
-                        <h3 class="map__address-title map_font-style">MAIL</h3>
-                        <div class="map__address-descript subtitle">
-                            <a href="#" class="map__mail-link subtitle">info@solarbxx.com</a>
-                        </div>                    
                     </div>
-                    <div class="map__social">
+                    <div class="map__social-conteiner">
                         <div class="social map__social">
-                            <a href="#" class="social__icon"><img src="img/map/Facebook.svg" alt="Facebook"></a>
-                            <a href="#" class="social__icon"><img src="img/map/Twitter.svg" alt="Twitter"></a>
-                            <a href="#" class="social__icon"><img src="img/map/Linkedin.svg" alt="Linkedin"></a>
+                            <a href="#" class="map__social-icon social__icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" class="map__social-icon social__icon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="map__social-icon social__icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="#" class="map__social-icon social__icon"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" class="map__social-icon social__icon"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -404,7 +424,7 @@
     <footer class="footer">
         <div class="wrapper">
                 <nav class="footer__menu">
-                    <div class="footer__column footer_size-1">
+                    <div class="footer__column">
                         <ul class="menu-down">
                             <li class="menu-down__title">
                                 <a href="#">INFORMATION</a>                                
@@ -423,7 +443,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__column footer_size-2">
+                    <div class="footer__column">
                         <ul class="menu-down">
                             <li class="menu-down__title">
                                 <a href="#">PROJECTS</a>                                
@@ -439,7 +459,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__column footer_size-3">
+                    <div class="footer__column">
                         <ul class="menu-down">
                             <li class="menu-down__title">
                                 <a href="#">SCP</a>                                
@@ -473,11 +493,13 @@
                         United States
                         </div>
                     </div>
-                    <div class="footer__social">
-                        <div class="social">
-                            <a href="#" class="social__icon"><img src="img/map/Facebook.svg" alt="Facebook"></a>
-                            <a href="#" class="social__icon"><img src="img/map/Twitter.svg" alt="Twitter"></a>
-                            <a href="#" class="social__icon"><img src="img/map/Linkedin.svg" alt="Linkedin"></a>
+                    <div class="footer__social-conteiner">
+                        <div class="footer__social social">
+                            <a href="#" class="footer__social-icon social__icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social-icon social__icon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social-icon social__icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social-icon social__icon"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social-icon social__icon"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
                         </div>
                     </div> 
                 </nav>
@@ -488,7 +510,7 @@
                     </div>
                     <div class="footer__policy">
                         <a class="footer__policy-item" href="#">Privacy Policy</a>
-                        <a class="footer__policy-item" style="width: 45.23%;" href="#">Terms and Conditions</a>
+                        <a class="footer__policy-item" href="#">Terms and Conditions</a>
                         <a class="footer__policy-item" href="#">Contact Us</a>
                     </div>
                 </div>
@@ -503,5 +525,7 @@
 <!-- connect swiper slider -->
 <script src="js/commonJs/swiperSlider/swiper-bundle.min.js"></script>
 <script src="js/aboutSwiperSlider.js"></script>
+<!-- Add font awesome icons-->
+<script src="https://kit.fontawesome.com/a8ec7c40c4.js" crossorigin="anonymous"></script>
 </body>
 </html>

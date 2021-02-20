@@ -20,7 +20,7 @@ window.addEventListener("resize", () => {
 // вызов скролла страницы вверх
 buttonUp.addEventListener("click", backToTop);
 // скролл старнцы в низ на величину указанную в переменной scrollUp
-billboardScrollIcon.addEventListener("click", scrollFunction)
+billboardScrollIcon.addEventListener("click", scrollFunction);
 
 
   

@@ -1,16 +1,14 @@
-let billboardHeader = document.querySelector('.billboard__header');
 let billboardMenu = document.querySelector('.billboard__menu');
 let billboardBurger = document.querySelector('.billboard__burger');
 let burgerFixed = document.querySelector('.burger__fixed');
 let menuBurger = document.querySelector('.menu-burger');
-// let menuBurgerFixed = document.querySelector('.menu-burger__fixed')
+let menuBurgerFixed = document.querySelector('.menu-burger__fixed')
 let billboardMenuBoardFixed = document.querySelector('.billboard__menu-board-fixed');
 let widthBurgerActive = 870;
-menuBurger.style.setProperty('--var-heightMenuBurger', window.innerHeight - billboardHeader.clientHeight + 'px');  // расчет высоты меню
-// menuBurgerFixed.style.setProperty('--var-heightMenuFixed', window.innerHeight - billboardHeaderFixed.clientHeight + 'px');  // расчет высоты меню
-// getComputedStyle(menuBurgerFixed).getPropertyValue("--var-heightMenuFixed"))
-// menuBurgerFixed.style.setProperty('--var-topMenuFixed', (window.innerHeight - (window.innerHeight - headerFixedHeight)) + 'px');  // расчет позиции меню
-console.log("in burger.js", billboardHeaderFixed.clientHeight);
+menuBurger.style.setProperty('--var-heightMenuBurger', window.innerHeight - billboardHeaderHeight + 'px');  // расчет высоты меню
+menuBurger.style.setProperty('--var-topMenuBurger', (window.innerHeight - (window.innerHeight - billboardHeaderHeight)) + 'px');  // расчет позиции меню
+menuBurgerFixed.style.setProperty('--var-heightMenuFixed', window.innerHeight - headerFixedHeight + 'px');  // расчет высоты меню
+menuBurgerFixed.style.setProperty('--var-topMenuFixed', (window.innerHeight - (window.innerHeight - headerFixedHeight)) + 'px');  // расчет позиции меню
 // действия при определенной ширине
 if (window.innerWidth <= widthBurgerActive) {
     addClass([billboardBurger, burgerFixed, billboardMenu, billboardMenuBoardFixed],
@@ -20,7 +18,8 @@ if (window.innerWidth <= widthBurgerActive) {
 }
 // действия при изменении ширины окна
 window.addEventListener('resize', () => {
-    menuBurger.style.setProperty('--var-heightMenuBurger', window.innerHeight - billboardHeader.clientHeight + 'px');
+    menuBurger.style.setProperty('--var-heightMenuBurger', window.innerHeight - billboardHeaderHeight + 'px');   // расчет высоты меню
+    menuBurger.style.setProperty('--var-topMenuBurger', (window.innerHeight - (window.innerHeight - billboardHeaderHeight)) + 'px');  // расчет позиции меню
     menuBurgerFixed.style.setProperty('--var-heightMenuFixed', window.innerHeight - headerFixedHeight + 'px');
     menuBurgerFixed.style.setProperty('--var-topMenuFixed', (window.innerHeight - (window.innerHeight - headerFixedHeight)) + 'px');  // расчет позиции меню 
     if (window.innerWidth <= widthBurgerActive) {
@@ -38,7 +37,7 @@ window.addEventListener('resize', () => {
     if (iAmScroll > billboardHeader.offsetHeight && body.classList.contains('lock') && menuBurger.classList.contains('menu-burger_active') && billboardBurger.classList.contains('active')) {
         removeClass([body, menuBurger], ['lock', 'menu-burger_active']);
     }
-    if (iAmScroll >= scrollUp - 1) {                         // управление fixed menu и fixed header. (-1) для корректного отображения fixed header         
+    if (iAmScroll >= scrollUp - 5) {                         // управление fixed menu и fixed header. (-5) для "мерцания" при скролле fixed header         
         billboardHeaderFixed.classList.add('active');
         if (burgerFixed.classList.contains('active') && billboardHeaderFixed.classList.contains('active') && window.innerWidth <= widthBurgerActive) {
             addClass([menuBurgerFixed], ['menu-burger__fixed_active']);
